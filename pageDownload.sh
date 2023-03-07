@@ -4,7 +4,7 @@
 # Default values                                           #
 ############################################################
 
-# todo: link=""
+link=""
 imgtype="png"
 imgdir="./downloadedPages"
 
@@ -43,7 +43,7 @@ done
 # Main program                                             #
 ############################################################
 
-link=$1
+url=$1
 chapter=$2
 start=$3
 end=$4
