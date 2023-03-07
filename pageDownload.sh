@@ -69,12 +69,24 @@ if [ -z "$type" ]; then
     type=$imgtype
 fi
 
-# todo
+for ((i=start; i<=end; i++)); do
+  page=$(printf "%03d" $i)
+  echo Downloading $url$chapter-$page.$type...
+
+  wget -r -l1 -nd -nH -P $imgdir -A jpg,jpeg,png,gif,svg $url$chapter-$page.$type
+  wgetreturn=$?
+
+  if [[ $wgetreturn -ne 0 ]]; then
+      echo "Getting image failed. Is the url correct?"
+      echo $url$chapter-$page.$type
+      break
+  fi
+done
 
 echo "Done."
 
 ############################################################
-# Copyright: T. H.                                         #
+# Copyright: Tina H.                                       #
 # https://github.com/sevject/chapter-page-downloader       #
 # License: GPLv3                                           #
 ############################################################
