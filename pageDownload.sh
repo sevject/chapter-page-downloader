@@ -62,7 +62,7 @@ if [ -z "$start" ]; then
 fi
 
 if [ -z "$end" ]; then
-    end=10
+    end=100
 fi
 
 if [ -z "$type" ]; then
@@ -77,8 +77,7 @@ for ((i=start; i<=end; i++)); do
   wgetreturn=$?
 
   if [[ $wgetreturn -ne 0 ]]; then
-      echo "Getting image failed. Is the url correct?"
-      echo $url$chapter-$page.$type
+      echo "No more pages to download. Stopping."
       break
   fi
 done
