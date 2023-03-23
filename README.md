@@ -1,13 +1,18 @@
 # chapter-page-downloader
 
-## Usage:
-
-### Show help:
+## Show help:
 ```
 ./pageDownload.sh -h
 ```
 
-### Download pages:
+## Download pages:
+### Download all available pages:
+```
+./pageDownload.sh http://example.com/ 0237
+```
+will download starting from http://example.com/0237-001.png
+
+### Download specific pages:
 ```
 ./pageDownload.sh http://example.com/ 0237 1 75
 ```
