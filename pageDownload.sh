@@ -21,7 +21,7 @@ Help()
    echo "url        url, ie. http://example.com/"
    echo "chapter    chapter, ie. 0237, default 0001"
    echo "first      [optional] starting page, ie. 1, default 1"
-   echo "last       [optional] last page, ie. 15, default 10"
+   echo "last       [optional] last page, ie. 15, default 100"
    echo "type       [optional] image type, ie. jpeg, default png"
    echo "options:"
    echo "h          Print this Help."
