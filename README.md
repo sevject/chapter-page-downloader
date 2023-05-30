@@ -1,5 +1,8 @@
 # chapter-page-downloader
 
+Download the file "pageDownload.sh" and go to the folder via your terminal.
+Then follow the information below.
+
 ## Show help
 ```
 ./pageDownload.sh -h
