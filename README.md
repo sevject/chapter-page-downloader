@@ -25,11 +25,11 @@ Then follow the information below.
 
 ## Example
 ```
-./pageDownload.sh https://temp.compsci88.com/manga/Berserk/ 0365
+./pageDownload.sh https://temp.compsci88.com/manga/OnePiece/ 0365
 ```
-Sometimes they change the link of the pages so if it doesn't work just check by inspecting the first image of the chapter. The link should be something like https://example.com/manga/Berserk/0365-001.png
+Sometimes they change the link of the pages so if it doesn't work just check by inspecting the first image of the chapter. The link should be something like https://example.com/manga/OnePiece/0365-001.png
 
-You just need the part until the chapter number: https://example.com/manga/Berserk/
+You just need the part until the chapter number: https://example.com/manga/OnePiece/
 
 The chapter number itself is the second paramemter needed for the script.
 
