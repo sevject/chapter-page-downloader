@@ -23,7 +23,7 @@ Then follow the information below.
 ```
 - Will download from http://example.com/manga/0237-001.png til http://example.com/manga/0237-075.png
 
-## Example (hi daniel)
+## Example
 ```
 ./pageDownload.sh https://temp.compsci88.com/manga/Berserk/ 0365
 ```
